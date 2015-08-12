@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+
+    "name": "Twii Noti",
+    "description": "View your Twii Notifications from your browser!",
+    "icons": { "128": "assets/images/298.png" },
+    "version": "3.0",
+
+    "background": {
+        "page": "panel.htm"
+    },
+    "background":{ "scripts": ["assets/scripts/background.js"], "persistent": false },
+
+    "permissions": ["https://*.twii.me/", "http://twiinoti.twii.ca/*", "storage", "notifications", "tabs", "alarms"],
+    "author": "Cody L.",
+    "browser_action": {
+        "default_icon": "assets/images/298-ns.disabled.png",
+        "default_popup": "panel.htm",
+        "default_title":"Twii Noti [0]"
+    }
+
+}
